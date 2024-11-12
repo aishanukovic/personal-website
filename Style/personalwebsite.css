@@ -1,0 +1,475 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-serif {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+header {
+    font-family: "Julius Sans One", serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: large;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Julius Sans One", serif;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.nav-box {
+    border:rgb(157, 156, 156) 2px solid;
+    padding: 10px;
+    margin: 20px auto 120px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    max-width: 700px;
+    width: 70%;
+    background-color: white;
+    border-radius: 0px;
+}
+
+.nav-box ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.nav-box ul li {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-box ul li a {
+    text-decoration: none;
+    color:rgb(111, 105, 115);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-box ul li a:hover {
+    background-color: beige;
+}
+
+p {
+    font-family: "Baskervville", serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main {
+    grid-column: 2 / span 1;
+    background-color: white;
+    padding: 60px;
+}
+
+.main-content {
+    background-color: beige;
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-column {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.photo-column img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.text-column {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.quote-top {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.quote-bottom {
+    width: 70px;
+    height: auto;
+    display: block;
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.container {
+    display: flexbox
+}
+
+.column {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+#experience {
+    text-align: center;
+    max-width: 900px;
+    padding: 40px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+#experience h2 {
+    margin-bottom: 40px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    background-color: beige;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+.experience-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(111, 105, 115);
+}
+
+.experience-graphic img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    width: 80%;
+}
+
+.experience-text {
+    grid-column: span 2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.experience-text h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+.experience-text h5 {
+    color: rgb(111, 105, 115);
+    margin-top: 0;
+    font-style: italic;
+}
+
+.experience-text li {
+    font-size: 1em;
+    font-family: "Times New Roman", serif;
+    text-align: left;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+#education {
+    grid-column: 2 / span 1;
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto 60px;
+    max-width: 900px;
+}
+
+#education h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Playfair Display", serif;
+}
+
+#education h3 {
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#education h6 {
+    padding-bottom: 20px;
+    color: rgb(111, 105, 115);
+    font-style: italic;
+}
+
+.education-container {
+    background-color: beige;
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-text {
+    flex: 0 1 auto;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.education-photo {
+    justify-self: end;
+    flex: 1;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-photo img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+#projects {
+    text-align: center;
+    margin: 0 auto 100px;
+    padding: 40px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px;
+    max-width: 450 px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: white;
+    border: 24px solid beige;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.project h4 {
+    margin: 0 0 10px 0;
+    color: rgb(111, 105, 115);
+    font-size: 1.2em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+.project p {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+.project img {
+    max-width: 80%;
+    height: auto;
+    
+}
+
+#contact {
+    text-align: center;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    padding: 40px 0;
+    width: 100%;
+}
+
+.contact-me {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+    width: 300px;
+    font-family: "Playfair Display", serif;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    border-radius; 50%;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content, .education-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    #experience {
+        grid-template-columns: 1fr;
+    }
+    .experience-item {
+        grid-template-columns: 1fr;
+    }
+    .experience-graphic img {
+        width: 60%;
+    }
+    .education-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .education-photo img {
+        max-width: 80%;
+    }
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .column {
+        flex: 1 1 50%;
+    }
+    #experience {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .experience-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .education-container {
+        flex-direction: row;
+    }
+    .education-text {
+        margin-right: 20px;
+    }
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .column {
+        flex: 1 1 33.33%;
+    }
+    #experience {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .experience-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .education-container {
+        flex-direction: row;
+    }
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
