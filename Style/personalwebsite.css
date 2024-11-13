@@ -484,3 +484,24 @@ footer {
         opacity: 0;
     }
 }
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Images/up-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#scrollTopBtn:hover {
+    background-color: rgb(241, 241, 237);
+}
