@@ -25,8 +25,3 @@ To view the website, open `Personal Website.html` in a web browser.
 - /js - Contains JavaScript files
 - /images - Contains images used on the website
 - index.html - Main HTML file
-
-## Author
-- **Aisha Nukovic**
-- [LinkedIn](https://linkedin.com/in/aishanukovic)
-- [GitHub](https://github.com/aishanukovic)
