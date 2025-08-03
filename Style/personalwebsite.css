@@ -16,7 +16,7 @@ body {
 .playfair-display-serif {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -49,15 +49,15 @@ h2 {
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-size: 1.8em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .nav-box {
     border:rgb(157, 156, 156) 2px solid;
     padding: 10px;
-    margin: 20px auto 120px;
-    margin-top: 60px;
-    margin-bottom: 120px;
+    margin: 10px auto 120px;
+    margin-top: 30px;
+    margin-bottom: 70px;
     max-width: 700px;
     width: 70%;
     background-color: white;
@@ -66,7 +66,7 @@ h2 {
 
 .nav-box ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -90,6 +90,15 @@ h2 {
     background-color: beige;
 }
 
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
+  width: 80%;
+  opacity: 0.6;
+}
+
 p {
     font-family: "Baskervville", serif;
     letter-spacing: 0.5px;
@@ -107,12 +116,15 @@ p {
 .main-content {
     background-color: beige;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content p {
+    margin: 0 45px 0 45px;
 }
 
 .photo-column {
@@ -126,6 +138,7 @@ p {
     width: 100%;
     max-width: 400px;
     height: 100%;
+    max-height: 600px;
     width: auto;
     object-fit: cover;
 }
@@ -136,28 +149,80 @@ p {
     font-family: "Playfair Display", serif;
     font-style: italic;
     text-align: center;
-    padding: 0 20px;
-    margin-top: 40px;
 }
 
 .quote-top {
-    width: 70px;
+    width: 60px;
     height: auto;
-    display: block;
-    margin-bottom: 20px;
-    margin-top: -20px;
+    float: left;
+    margin: 0 10px 10px 0;
 }
 
 .quote-bottom {
-    width: 70px;
+    width: 60px;
     height: auto;
-    display: block;
     float: right;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 10px;
 }
 
-.container {
-    display: flexbox
+.skills-section {
+  padding: 80px 30px;
+  font-family: Arial, sans-serif;
+}
+
+#skills h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skills-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: beige;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.skills-category:last-of-type {
+  border-bottom: none;
+  padding-bottom: 5;
+}
+
+.skills-category h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: rgb(111, 105, 115);
+  font-family: "Playfair Display", serif;
+}
+
+.skills-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-category li {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-family: "Playfair Display", serif;
+  white-space: nowrap;
+}
+
+.skills-category li span {
+  margin-right: 6px;
 }
 
 .column {
@@ -167,26 +232,29 @@ p {
 
 #experience {
     text-align: center;
-    max-width: 900px;
-    padding: 40px;
+    padding: 0 20px 40px 20px;
     margin: 0 auto;
-    padding-top: 100px;
+    max-width: 900px;
+    width: 100%;
 }
 
 #experience h2 {
-    margin-bottom: 40px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .experience-item {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 30px;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
     background-color: beige;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 20px auto;
     width: 100%;
-    max-width: 900px;
+    max-width: 859px;
+    align-items: start;
+    justify-content: center;
 }
 
 .experience-graphic {
@@ -197,24 +265,23 @@ p {
 }
 
 .experience-graphic img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     border-radius: 50%;
-    width: 80%;
+    width: 60%;
 }
 
 .experience-text {
-    grid-column: span 2;
+    grid-column: span 3;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .experience-text ul {
     list-style-type: disc;
     margin-left: 20px;
     padding-right: 20px;
-    padding-bottom: 40px;
 }
 
 .experience-text h4 {
@@ -232,28 +299,63 @@ p {
 
 .experience-text li {
     font-size: 1em;
-    font-family: "Times New Roman", serif;
+    font-family: "Baskervville", serif;
+    letter-spacing: 0.5px;
     text-align: left;
-    font-style: italic;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+.experience-details {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #444;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px auto;
+  transition: color 0.3s ease;
+}
+
+.toggle-text {
+  text-decoration: underline;
+}
+
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn.open .toggle-icon {
+  transform: rotate(180deg);
 }
 
 #education {
     grid-column: 2 / span 1;
     background-color: white;
-    padding: 40px;
-    margin: 0 auto 60px;
+    padding: 0 40px;
+    margin: 0 auto;
     max-width: 900px;
 }
 
 #education h2 {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
+    padding-bottom: 5px;
     font-family: "Playfair Display", serif;
 }
 
 #education h3 {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    margin-top: 40px;
     font-size: 1.2em;
     font-weight: 500;
 }
@@ -262,15 +364,15 @@ p {
     padding-bottom: 20px;
     color: rgb(111, 105, 115);
     font-style: italic;
+    font-family:"Baskervville", serif;
 }
 
 .education-container {
     background-color: beige;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 10px auto 0;
     display: grid;
     grid-template-columns: 60% 40%;
-    gap: 20px;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -281,13 +383,22 @@ p {
     line-height: 1.5;
     font-family: "Playfair Display", serif;
     text-align: center;
-    padding: 20px;
+}
+
+.education-entry {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.education-entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
 
 .education-photo {
     justify-self: end;
     flex: 1;
-    text-align: right;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -295,58 +406,179 @@ p {
 .education-photo img {
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    object-fit: cover;
+    max-width: 1000px;
+    object-fit: fill;
 }
 
-#projects {
+#projects h2 {
     text-align: center;
-    margin: 0 auto 100px;
-    padding: 40px 0;
+    margin-top: 50px;
+    font-family: "Playfair Display", serif;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
-    padding: 10px;
-    max-width: 450 px;
-    width: 72%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 10px 10px 0 10px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.project {
-    background-color: white;
-    border: 24px solid beige;
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: auto;
+.project-card {
+  background-color: white;
+  border: 24px solid beige;
+  position: relative;
+  padding: 0;
+  height: 200px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project h4 {
-    margin: 0 0 10px 0;
-    color: rgb(111, 105, 115);
-    font-size: 1.2em;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
+.project-card:hover {
+  transform: scale(1.03);
 }
 
-.project p {
-    font-size: 1em;
-    color: black;
-    text-align: center;
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.project img {
-    max-width: 80%;
-    height: auto;
-    
+.project-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.project-card:hover .project-image-wrapper img {
+  filter: blur(3px) brightness(0.8);
+}
+
+.project-title-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(160, 160, 160, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-title-overlay {
+  opacity: 1;
+}
+
+.project-title-overlay h4 {
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.modal-content h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.modal-content p {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#modal-description {
+    margin-bottom: 20px;
+}
+
+#modal-tech-stack .tech-label {
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+#modal-tech-stack {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#modal-github-link {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: rgb(241, 241, 241);
+  color: #333;
+  border: 1px solid rgb(111, 105, 115);
+  font-family: "Playfair Display", serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.github-button:hover {
+  background-color: rgb(212, 212, 209);
+  color: #222222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+#project-modal .close-button {
+  top: 5px;
+  right: 10px;
+  position: absolute;
+  font-size: 32px;
+  padding: 0;
+  z-index: 1001;
 }
 
 #contact {
@@ -388,44 +620,195 @@ p {
 .icon img {
     width: 100%;
     height: auto;
-    border-radius; 50%;
+    border-radius: 50%;
 }
 
 footer {
     text-align: center;
     color: grey;
-    margin: 0;
     width: 100%;
     background-color: rgb(241, 241, 241);
-    padding: 20px 0;
+    padding-bottom: 5px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .text-column {
+        font-size: 1em;
+    }
+
+    .text-column p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav-box ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .nav-box ul li {
+        margin-bottom: 10px;
+    }
+
+    #about {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .main-content, .education-container {
         grid-template-columns: 1fr;
         padding: 20px;
     }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .photo-column img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .text-column {
+        padding: 20px;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .quote-top,
+    .quote-bottom {
+        width: 40px;
+    }
+
+    #skills {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     #experience {
-        grid-template-columns: 1fr;
+        padding: 0 15px 40px;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
+        box-sizing: border-box;
     }
+
     .experience-item {
+        display: grid;
         grid-template-columns: 1fr;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 859px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: beige;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .experience-graphic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
     .experience-graphic img {
         width: 60%;
+        max-width: 80px;
+        height: auto;
+        border-radius: 50%;
     }
+
+    .experience-text {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .experience-text ul {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .toggle-btn {
+        margin-top: 12px;
+    }
+
+    #education {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .education-text {
         margin-right: 0;
         margin-bottom: 20px;
     }
+
     .education-photo img {
         max-width: 80%;
     }
+
     #projects {
         grid-template-columns: 1fr;
     }
+
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 90vw;
+        max-width: 90vw;
+        padding: 20px;
+        box-sizing: border-box;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        border-radius: 8px;
+        overflow-x: hidden;
+    }
+
+    .modal-content img {
+        max-height: 150px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2em;
+    }
+
+    .modal-content p {
+        font-size: 0.9em;
+    }
+
+    .close-button {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
     }
 }
 
@@ -433,21 +816,63 @@ footer {
     .column {
         flex: 1 1 50%;
     }
+
     #experience {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px 40px;
+        margin: 0 auto;
+        max-width: 90%;
+        width: 100%;
     }
+
     .experience-item {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: 4fr;
+        gap: 10px;
+        margin: 20px;
+        width: 100%;
+        max-width: 859px;
+        background-color: beige;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-items: start;
     }
+
+    .experience-graphic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-graphic img {
+        width: 80%;
+        height: auto;
+        max-width: 100px;
+        border-radius: 50%;
+        align-items: center;
+    }
+
+    .experience-text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .experience-text ul {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
     .education-container {
         flex-direction: row;
     }
-    .education-text {
-        margin-right: 20px;
-    }
+    
     #projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -457,18 +882,23 @@ footer {
     .column {
         flex: 1 1 33.33%;
     }
+
     #experience {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
+
     .experience-item {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
+
     .education-container {
         flex-direction: row;
     }
+
     #projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .project-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -563,9 +993,11 @@ footer {
 }
 
 label {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     font-weight: bold;
+    justify-content: left;
+    font-family: "Baskervville", serif;
 }
 
 .message-label {
@@ -581,6 +1013,11 @@ input[type="email"], input[type="text"], textarea {
     font-size: 16px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
 }
 
 form label:nth-of-type(1), form label:nth-of-type(3) {
@@ -614,6 +1051,7 @@ button[type="submit"]:focus {
     font-weight: bold;
     color: rgb(111, 105, 115);
     margin-top: 15px;
+    margin-bottom: 5px;
     padding: 8px;
     background-color: #f9f9f9;
     border: 1px solid rgb(73, 73, 74);

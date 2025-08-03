@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
         <link rel="stylesheet" type="text/css" href="style/meyerreset.css">
         <link rel="stylesheet" href="style/personalwebsite.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -26,9 +27,10 @@
             <nav class="nav-box">
                 <ul>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -38,41 +40,173 @@
                             <img src="Images/IMG_8339.jpg" alt="Aisha Nukovic">
                         </div>
                         <div class="text-column">
-                            <img class="quote-top" src="Images/quote-top.png" alt="Quote Icon">
-                            <p>Driven by a passion for social justice and cutting-edge technologies, I strive to build software solutions that make a difference. Explore my journey as an aspiring software developer, featuring my latest projects, work experiences, and insights on the intersection of technology and advocacy.</p>
-                            <img class="quote-bottom" src="Images/quote-bottom.png" alt="Quote Icon">
+                            <p>
+                                <img class="quote-top" src="Images/quote-top.png" alt="Quote Icon">
+                                I'm a software developer with a passion for building thoughtful, intuitive, and impactful platforms. I thrive on solving complex problems with elegant solutions—whether it's through clean code, creative design, or collaborative innovation. <br><br> With a background in both technology and advocacy, I bring a unique perspective to my work, combining technical precision with a people-centered approach. Explore my projects, skills, and journey. <br><br> Feel free to reach out — I love connecting with 
+                                <img class="quote-bottom" src="Images/quote-bottom.png" alt="Quote Icon">
+                                others who are just as excited about what's possible through tech!
+                            </p>
                         </div>
                 </div>
             </main>
-            <section id="experience">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <div class="experience-graphic">
-                        <img src="Images/bolt.png" alt="Lightning Bolt">
-                    </div>
-                    <div class="experience-text">
-                        <h4>Bolt Accelerator Consulting - Executive Assistant</h4>
-                        <h5>Present</h5>
+            <hr class="section-divider" />
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Languages:</h3>
                         <ul>
-                            <li>Coordinating strategic meetings, planning sessions, and leadership communications, supporting goal-setting and operational initiatives.</li>
-                            <li>Assisting with financial budgeting, cash flow management, business acquisitions, and investor relations to support organizational growth.</li>
-                            <li>Supporting marketing, sales, and business development efforts, contributing to social media, client outreach, and market expansion initiatives.</li>
+                            <li><span>🧠</span> JavaScript</li>
+                            <li><span>🐍</span> Python</li>
+                            <li><span>🌐</span> HTML</li>
+                            <li><span>🎨</span> CSS</li>
+                            <li><span>🗃️</span> SQL</li>
+                            <li><span>📦</span> NoSQL</li>
                         </ul>
                     </div>
+
+                    <div class="skills-category">
+                    <h3>Technologies:</h3>
+                    <ul>
+                        <li><span>⚛️</span> React.js</li>
+                        <li><span>📱</span> React Native</li>
+                        <li><span>📡</span> AngularJS</li>
+                        <li><span>🟢</span> Node.js</li>
+                        <li><span>🚀</span> Expo</li>
+                        <li><span>🔧</span> Git</li>
+                        <li><span>🔗</span> API Development</li>
+                        <li><span>♻️</span> CI/CD</li>
+                        <li><span>📲</span> Cross-Platform</li>
+                        <li><span>🗄️</span> Database Management</li>
+                    </ul>
+                    </div>
+
+                    <div class="skills-category">
+                    <h3>Other:</h3>
+                    <ul>
+                        <li><span>💻</span> Full-Stack Development</li>
+                        <li><span>🧩</span> OOP</li>
+                        <li><span>🧠</span> Algorithms & Data Structures</li>
+                        <li><span>📈</span> Agile</li>
+                        <li><span>🎨</span> Creativity</li>
+                        <li><span>🤝</span> Team Collaboration</li>
+                        <li><span>🔍</span> Analytical Skills</li>
+                        <li><span>🗂️</span> Project Management</li>
+                        <li><span>🧠</span> Problem Solving</li>
+                    </ul>
+                    </div>
                 </div>
+            </section>
+            <hr class="section-divider" />
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card" onclick="openModal(0)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project1-still.png" alt="Project 1">
+                            <div class="project-title-overlay">
+                                <h4>Phonebook App</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal(1)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project2-still.png" alt="Project 2">
+                            <div class="project-title-overlay">
+                                <h4>Weather Forecasting App</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal(2)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project3-still.png" alt="Project 3">
+                            <div class="project-title-overlay">
+                                <h4>Weather Forecasting Mobile App</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal(3)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project4-still.png" alt="Project 4">
+                            <div class="project-title-overlay">
+                                <h4>Note-Taking App</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal(4)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project5-still.png" alt="Project 5">
+                            <div class="project-title-overlay">
+                                <h4>Capstone Project - Naturopath App</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="openModal(5)">
+                        <div class="project-image-wrapper">
+                            <img src="Images/project6-still.png" alt="Project 6">
+                            <div class="project-title-overlay">
+                                <h4>Personal Website</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="project-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button" onclick="closeModal()">&times;</span>
+                        <img id="modal-gif" src="" alt="Project in Action">
+                        <h3 id="modal-title"></h3>
+                        <p id="modal-description"></p>
+                        <p id="modal-tech-stack"></p>
+                        <p id="modal-github-link"></p>
+                    </div>
+                </div>
+            </section>
+            <hr class="section-divider" />
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-container">
+                    <div class="education-text">
+                    <div class="education-entry">
+                        <h3>University of British Columbia</h3>
+                        <h6>September 2024 - June 2025</h6>
+                        <p>Software Development Bootcamp</p>
+                    </div>
+                    <div class="education-entry">
+                        <h3>University of Toronto</h3>
+                        <h6>September 2017 - June 2021</h6>
+                        <p>
+                        Bachelor of Arts Degree with Honours: course focus in Calculus, Chemistry,
+                        Biology, and Statistics
+                        </p>
+                    </div>
+                    </div>
+                    <div class="education-photo">
+                    <img src="Images/books.png" alt="Books" />
+                    </div>
+                </div>
+            </section>
+            <hr class="section-divider" />
+            <section id="experience">
+                <h2>Experience</h2>
                 <div class="experience-item">
                     <div class="experience-graphic">
                         <img src="Images/gavel.png" alt="Gavel">
                     </div>
                     <div class="experience-text">
-                        <h4>Surrey RCMP - Special Victim's Unit</h4>
-                        <h5>2021-2024</h5>
-                        <ul>
-                            <li>Assisted approximately eighty victims at a time in the criminal justice system who reported stranger sexual assaults by researching and disseminating information about the legal system to clients.</li>
-                            <li>Collaborated with community partners to develop interventions in community programs, processes, and policies, contributing to the achievement of project goals.</li>
-                            <li>Gathered data on client demographics, needs, and trends during daily client work and weekly outreach program interactions.</li>
-                            <li>Worked with Fraser Health forensic nurses one day a week to assist victims of sexual assault complete forensic nursing exam and provide evidence at participating hospitals.</li>
-                        </ul>
+                        <h4>Surrey RCMP & Surrey Women's Centre - Special Victim's Unit Community Liaison</h4>
+                        <h5>2021 - 2024</h5>
+                        <button class="toggle-btn">
+                            <span class="toggle-text">Show Details</span>
+                            <span class="toggle-icon">▼</span>
+                        </button>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Coordinated multi-sector partnerships to develop community intervention strategies, experience that mirrors cross-functional team collaboration in software projects.</li>
+                                <li>Collected and analyzed client data to identify patterns and inform social programs applying the same data-driven mindset used in backend development and user analytics.</li>
+                                <li>Trusted to manage sensitive data and maintain confidentiality, directly applicable to secure data handling and user privacy in web applications.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="experience-item">
@@ -80,13 +214,19 @@
                         <img src="Images/care.png" alt="Care Hands">
                     </div>
                     <div class="experience-text">
-                        <h4>University of Toronto's Sexual Violence Prevention & Support Centre - Programming Assistant</h4>
-                        <h5>2018-2019</h5>
-                        <ul>
-                            <li>Contracted for the year to organize and execute monthly programming events for small groups of a dozen students based on independent research and analysis of sexual assault data on campus.</li>
-                            <li>Planned and executed two larger semester events for over three hundred students, faculty, and members of the community.</li>
-                            <li>Created social media campaigns to promote events and programming initiatives with a reach of about a thousand views per publication.</li>
-                        </ul>
+                        <h4>University of Toronto's Sexual Violence Prevention & Support Centre - Events & Programming Assistant</h4>
+                        <h5>2018 - 2019</h5>
+                        <button class="toggle-btn">
+                            <span class="toggle-text">Show Details</span>
+                            <span class="toggle-icon">▼</span>
+                        </button>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Led end-to-end execution of monthly campus programs by independently analyzing campus sexual violence trends and translating research findings into targeted, high-impact events for student cohorts (≈12 attendees per session).</li>
+                                <li>Scaled programming strategy to organize two large-scale, semester-wide events reaching 300+ students, faculty, and community members—requiring timeline planning, stakeholder coordination, and cross-functional communication.</li>
+                                <li>Designed and launched a series of digital engagement campaigns that increased event visibility, achieving an average reach of 1,000+ views per post across university-affiliated channels—highlighting audience segmentation, iterative content design, and performance tracking.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="experience-item">
@@ -95,12 +235,18 @@
                     </div>
                     <div class="experience-text">
                         <h4>Ontario Women's Justice Network - Volunteer</h4>
-                        <h5>2018-2020</h5>
-                        <ul>
-                            <li>Researched with lawyers to provide legal information to women who experienced sexual or domestic violence.</li>
-                            <li>Implemented education and outreach programs to ten different community groups monthly to ensure we involved a wide number of stakeholders.</li>
-                            <li>Assisted lawyers with modifying presentations to reflect relevant information and language depending on the audience.</li>
-                        </ul>
+                        <h5>2018 - 2020</h5>
+                        <button class="toggle-btn">
+                            <span class="toggle-text">Show Details</span>
+                            <span class="toggle-icon">▼</span>
+                        </button>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Conducted legal research and co-authored educational resources for women affected by sexual and domestic violence, supporting content that served diverse community needs.</li>
+                                <li>Coordinated outreach to 10+ community groups monthly, demonstrating scalable stakeholder engagement and adaptive content delivery across audiences.</li>
+                                <li>Collaborated with lawyers to iterate and refine presentations, tailoring technical information for clarity—honing skills in audience-centered communication and UX thinking.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="experience-item">
@@ -108,89 +254,46 @@
                         <img src="Images/women.png" alt="Women Symbol">
                     </div>
                     <div class="experience-text">
-                        <h4>Delta Delta Delta (Canada Alpha Chapter) - Executive Officer</h4>
-                        <h5>2017-2021</h5>
-                        <ul>
-                            <li>Planned, organized, and executed monthly events and programming for four hundred women in the community.</li>
-                            <li>Hosted yearly spirit week of events for approximately one thousand participating members in the community.</li>
-                            <li>Maintained membership development through diverse and innovative programming for over forty women in the chapter Researched and hosted numerous sexual violence prevention and body image workshops.</li>
-                        </ul>
+                        <h4>Delta Delta Delta Sorority & Panhellenic Association - Executive Officer</h4>
+                        <h5>2017 - 2021</h5>
+                        <button class="toggle-btn">
+                            <span class="toggle-text">Show Details</span>
+                            <span class="toggle-icon">▼</span>
+                        </button>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Led monthly programming for 400+ members and executed large-scale annual events reaching over 1,000 participants—exercising full-cycle project management and stakeholder coordination.</li>
+                                <li>Designed and facilitated over 10 workshops on sexual violence prevention, body image, and leadership, applying inclusive design principles and feedback-driven iteration.</li>
+                                <li>Maintained member engagement through data-informed programming, improving community morale and retention through creative event pipelines and continuous iteration.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="experience-item">
                     <div class="experience-graphic">
-                        <img src="Images/megaphone.png" alt="Megaphone">
+                        <img src="Images/megaphone.png" alt="Megaphone" />
                     </div>
+
                     <div class="experience-text">
-                        <h4>United Nations - Youth Delegate</h4>
+                        <h4 class="experience-title">United Nations - Youth Delegate</h4>
                         <h5>2019</h5>
-                        <ul>
-                            <li>Elected as a Canadian delegate based on personal research and activism about gender-based violence accomplished on campus and within the community.</li>
-                            <li>Conducted thorough research and analysis to identify trends, patterns, and policies about gender-based violence in Canada to present findings and experiences to approximately one hundred audience members.</li>
-                        </ul>
+                        <button class="toggle-btn">
+                            <span class="toggle-text">Show Details</span>
+                            <span class="toggle-icon">▼</span>
+                        </button>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Nationally selected to represent Canada based on grassroots research and digital advocacy around gender-based violence.</li>
+                                <li>Analyzed Canadian data on gender-based violence and presented findings to 100+ global attendees, translating insights into actionable recommendations—building a foundation in analytical synthesis and clear technical communication.</li>
+                                <li>Applied research and presentation skills to a global platform, aligning cross-cultural issues with localized policy responses and stakeholder alignment.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div class="education-container">
-                    <div class="education-text">
-                        <h3>University of Toronto</h3>
-                        <h6>September 2017 - June 2021</h6>
-                        <p>Bachelor of Arts Degree with Honours: course focus in Calculus, Chemistry, Biology, and Statistics</p>
-                        <h3>University of British Columbia</h3>
-                        <h6>September 2024 - June 2025</h6>
-                        <p>Software Development Bootcamp</p>
                     </div>
-                    <div class="education-photo">
-                        <img src="Images/Screenshot 2024-10-13 at 2.35.47 PM.png" alt="Books">
-                    </div>
-                </div>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project">
-                        <h4>Algorithm & Structural Foundations</h4>
-                        <p>This project showcases exceptional JavaScript skills, with polished interactive elements, a highly efficient algorithm, and well-documented, logically sound code.</p>
-                    </div>
-                    <div class="project">
-                        <img src="Images/java.png">
-                    </div>
-                    <div class="project">
-                        <h4>Weather Forecasting App</h4>
-                        <p>Created a dynamic Weather Forecasting App using React and the OpenWeatherMap API, featuring well-structured components, responsive design, state management, and user-friendly error handling, with additional functionality such as temperature toggles and multi-day forecasts.</p>
-                    </div>
-                    <div class="project">
-                        <img src="Images/react.png">
-                    </div>
-                    <div class="project">
-                        <h4>Mobile App</h4>
-                        <p>Transformed an existing app into a mobile application using React Native, focusing on adapting functionality for a seamless mobile experience with a user-friendly interface.</p>
-                    </div>
-                    <div class="project">
-                        <img src="Images/node.png">
-                    </div>
-                    <div class="project">
-                        <h4>Note-Taking App</h4>
-                        <p>Full-stack Note-Taking App using a Node.js back-end with an Express server, integrated with a front-end interface, featuring CRUD operations, user authentication, and secure database management.</p>
-                    </div>
-                    <div class="project">
-                        <img src="Images/mongo.svg">
-                    </div>
-                    <div class="project">
-                        <h4>Capstone Project</h4>
-                        <p>Designed, developed, and deployed a fully functional software application that utilizes industry-standard practices and JavaScript frameworks, showcasing skills in software design, problem-solving, and thorough documentation throughout the development process.</p>
-                    </div>
-                </div>
             </section>
             <section id="contact">
                 <h2>Contact Me</h2>
                 <ul class="contact-me">
-                    <li>
-                        <img src="Images/phone.png" alt="Phone Icon" class="icon">
-                        <span class="contact-text">(778) 385-7150</span>
-                    </li>
                     <li>
                         <a href="#" id="openContactModal">
                             <img src="Images/email.png" alt="Email Icon" class="icon">
@@ -198,7 +301,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/aisha-n-424933178/" target="_blank" class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/aishanukovic/" target="_blank" class="linkedin-link">
                             <img src="Images/linkedin.png" alt="LinkedIn Icon" class="icon">
                             <span class="contact-text">LinkedIn Profile</span>
                         </a>
@@ -213,7 +316,7 @@
             </section>
         </div>
         <footer>
-            <p>&copy; 2024 Website Created by Aisha Nukovic</p>
+            <p>&copy; <span id="current-year"></span> Website Created by Aisha Nukovic</p>
         </footer>
         <div id ="contactModal" class="modal">
             <div class="modal-content">
