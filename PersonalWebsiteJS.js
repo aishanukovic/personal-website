@@ -31,7 +31,6 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-// ===== Projects Modal Data =====
 const projects = [
   {
     title: "Phonebook App",
@@ -73,11 +72,10 @@ const projects = [
     gif: "Images/project6.gif",
     description: "A custom portfolio site showcasing projects, skills, education, and interactive visual effects. I designed and built all sections with animated typewriter headers, modal project displays, icon-based navigation, and mobile-responsive layout enhancements.",
     techStack: "HTML, CSS, JavaScript",
-    github: "link"
+    github: "https://github.com/aishanukovic/personal-website"
   }
 ];
 
-// ===== Project Modal Functions =====
 function openModal(index) {
   const modal = document.getElementById('project-modal');
   const { title, gif, description, techStack, github } = projects[index];
